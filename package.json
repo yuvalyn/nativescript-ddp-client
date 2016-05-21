@@ -15,7 +15,7 @@
     }
   },
   "dependencies": {
-    "nativescript-websockets": "1.2.1",
+    "nativescript-websockets": "1.2.2",
     "ddp-underscore-patched": "0.8.1-2",
     "ddp-ejson": "git+https://github.com/blagoev/ddp-ejson"
   }
