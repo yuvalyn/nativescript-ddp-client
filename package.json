@@ -1,6 +1,6 @@
 { 
   "name" : "nativescript-ddp-client",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "main" : "nativescript-ddp-client.js",
   "repository": {
     "type": "git",

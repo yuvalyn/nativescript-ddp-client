@@ -1,7 +1,7 @@
 var fetch = require("fetch").fetch;
 var WebSocket = require("nativescript-websockets");
 var EJSON = require("ddp-ejson");
-var pathJoin = require('./path').join;
+var fs = require("file-system");
 var _ = require("ddp-underscore-patched");
 
 var WebSocketClient = function (url, protocols, options) {
@@ -354,7 +354,7 @@ DDPClient.prototype._makeSockJSConnection = function () {
   // do the info hit
   var protocol = self.ssl ? "https://" : "http://";
   var randomValue = "" + Math.ceil(Math.random() * 9999999);
-  var path = pathJoin("/", self.path || "", "sockjs/info");
+  var path = fs.path.join("/", self.path || "", "sockjs/info");
   var url = protocol + self.host + ":" + self.port + path;
 
   var requestOpts = { 'url': url, 'agentOptions': self.tlsOpts };
